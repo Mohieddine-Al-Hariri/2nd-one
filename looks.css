@@ -30,11 +30,7 @@ body{
     padding:6px;
     border-radius: 4px;
 }
-#main-navigation a:hover{
-    color:red;
-
-    background-color: #8f746c;
-}
+#main-navigation a:hover{background-color: #8f746c; cursor: pointer;} 
 #main-navigation a.current{
     background-color: orange;
     border-radius: 4px;
