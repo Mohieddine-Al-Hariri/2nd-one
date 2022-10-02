@@ -33,7 +33,7 @@ body{
 #main-navigation a:hover{
     color:red;
 
-    background-color: aqua;
+    background-color: #8f746c;
 }
 #main-navigation a.current{
     background-color: orange;
