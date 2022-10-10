@@ -24,11 +24,14 @@ body{
     padding: 10px;
 }
 #main-navigation ul{
-    text-align: right;
     list-style-type: none;
     margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
 }
+
 #main-navigation li{
+    position: relative;
     display: inline-block;
     margin-left: 20px;
 }
@@ -46,6 +49,69 @@ body{
     background-color: orange;
     border-radius: 4px;
 }
+
+    /************
+    Shopping Cart
+    *************/
+.counter-container{
+    border: white solid 2px;
+    padding: 7px 10px;
+    color: white;
+    font-size: 20px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#counter{
+    display: none;
+}
+#counter.animated-counter{
+    display: inline-block;
+    animation: counts .5s ease-in-out;
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 10px;
+    position: relative;
+    text-align: center;
+    top: -.5rem;
+}
+@keyframes counts {
+    0%{
+        top: 0rem;
+        right: -1.8rem;
+        transform: rotate(180deg);
+    }
+    25%{
+        top: .5rem;
+        right: -1.6rem;
+        transform: rotate(120deg);
+    }
+    50%{
+        top: .7rem;
+        right: -.6rem;
+        transform: rotate(90deg);
+    }
+    75%{
+        top: .5rem;
+        right: 0rem;
+        transform: rotate(45deg);
+    }
+    90%{
+        top: 0rem;
+        right: .3rem;
+        transform: rotate(15deg)
+    }
+    100%{
+        top: -.5rem;
+        right: 0rem;
+        transform: rotate(0deg)
+    }
+}
+
+
+
+/******
+******/
 #lead-banner img{
     width: 100%;
 }
