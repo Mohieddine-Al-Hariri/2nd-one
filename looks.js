@@ -13,3 +13,11 @@ addToBag.forEach(addToBagy=>addToBagy.addEventListener('click', event =>{
     setTimeout(() => counter.classList.add('animated-counter'),1);
 })
 );
+
+/*Remove Button*/
+const removeBtns = document.querySelectorAll('#remove-item');
+const cartItems = document.querySelectorAll('#cart-item');
+
+removeBtns.forEach(removeBtn => removeBtn.addEventListener('click',function removeItem() {
+    removeBtn.parentElement.remove();
+}));
